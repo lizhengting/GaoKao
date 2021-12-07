@@ -50,6 +50,7 @@ export default {
               span.innerHTML+='211'
               li.appendChild(span)
             }
+            
             li.innerHTML+=Type[i]['学校名称']
             li.onclick=function(){
               var str
@@ -114,7 +115,7 @@ export default {
 }
 .list-group{
 width: 100%;
-max-height: 255px;
+max-height: 225px;
 overflow-y:scroll; 
 overflow-x:hidden;
 }
@@ -124,5 +125,6 @@ flex: none;
 li{
   height: 50px;
   color: white;
+  
 }
 </style>

@@ -139,7 +139,7 @@ mounted(){
 <style scoped>
 .enterScore{
   width: 100%;
-  height: 540px;
+  height: 460px;
   margin-top: 10%
 }
 .enterScoreContainer{

@@ -4,18 +4,20 @@
              <div class="myContainer">
                  <div style="width:20%; height:100%; float:left; display:inline">
                      <my-select-menu class= "box" style="height:50%;"></my-select-menu>
-                     <mycircle class= "box" style="height:50%;"></mycircle>
+                     <!-- <mycircle class= "box" style="height:50%;"></mycircle> -->
+                    <my-list class= "box" style="height:50%"></my-list>
                  </div>
                 <!-- <my-select-menu class= "box" style="width:20%; height:50%; float:left; display:inline"></my-select-menu>
                 <mycircle2 class= "box" style="width:25%;  height:auto; float:left; display:inline"></mycircle2> -->
                 <mymap class= "box" style="width:57%;  height:100%; float:left; display:inline;"></mymap>
-                <div class= "box" style="width:23%;  height:100%; float:left; display:inline">
+                <div class= "box" style="width:23%;  height:120%; float:left; display:inline">
                 <enter-score ></enter-score>
                 <my-line-chart ></my-line-chart>
                 </div>
            </div>
            <div class="foot">
-               <my-list class= "box" style="width:20%;  height:100%; float:left; display:inline"></my-list>
+                <mycircle class= "box" style="width:20%;  height:100%; float:left; display:inline"></mycircle>
+               <!-- <my-list class= "box" style="width:20%;  height:100%; float:left; display:inline"></my-list> -->
                <!-- <mycircle class= "box" style="width:28%; height:auto; float:left; display:inline"></mycircle>
                 <mycircle2 class= "box" style="width:25%;  height:auto; float:left; display:inline"></mycircle2> -->
                 <school-para  class= "box" style="width:57%;  height:100%; float:left; display:inline"></school-para>
@@ -42,6 +44,7 @@ export default {
     mymap,
     enterScore,
     schoolPara,
+    //schoolpara_2 ,
     mycircle,
     mycircle2,
     myList,
@@ -87,10 +90,10 @@ export default {
             width: 100%;
             height: 70%;
             top: 37px;
-            background-color: "white"; /*#081130*/
+            background-color: "white";
             text-align: center;
+            background-color: white;
         }
-
         /* .left{
             width: 30%;
             background-color: #145b7d;
@@ -98,7 +101,7 @@ export default {
         }
         .right{
             width: 34%;
-            background-color: "white" ;
+            background-color: #145b7d;
             text-align: center;
         }
         .mid{
@@ -106,7 +109,6 @@ export default {
             flex: 1;
             text-align: center;
         } */
-
         .foot{
             position: absolute;
             width: 100%;
@@ -125,7 +127,7 @@ export default {
             margin:4px auto;
             /* width:400px; */
             height:30px;
-            background: "white";/*rgba(1, 19, 67, 0.8)*/
+            background: "white";
             border: 2px solid #00a1ff;
             border-radius: 8px;
             /* z-index: 999; */
@@ -157,7 +159,7 @@ export default {
             font-size: 20px;
             font-weight: bold;
             text-align: center;
-            color:"white";
+            color:black;
         }
 
 </style>

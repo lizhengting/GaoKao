@@ -47,7 +47,7 @@ mounted(){
                 text: this.location+'高校分类',
                 left: "center",
                 textStyle: {
-                fontSize: 25,
+                fontSize: 18,
                 color: "black"//设置标题字体颜色
                  },
             },
@@ -56,7 +56,7 @@ mounted(){
     },
     legend: {
         bottom: '5%',
-        width:'70%',
+        width:'60%',
         orient:'horizontal',
         textStyle: { //图例文字的样式
                             color: 'black',
@@ -67,10 +67,10 @@ mounted(){
         {
             name: '访问来源',
             type: 'pie',
-            radius: ['40%', '70%'],
+            radius: ['30%', '50%'],
             width:'40%',
             left:'30%',
-            top:'-20%',
+            top:'-35%',
             avoidLabelOverlap: false,
             itemStyle: {
                 borderRadius: 10,
@@ -104,7 +104,7 @@ mounted(){
 <style scoped>
 .circle{
   width: 470px;
-  height: 270px;
+  height: 200px;
   margin-left: -25%;
   margin-top: 5%;
 }

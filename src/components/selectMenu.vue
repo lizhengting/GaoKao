@@ -266,7 +266,7 @@ span{
   margin-left:-35%;
 }
 button{
-  margin-top: 5px;
+  margin-top: -25px;
 }
 #score span{
   margin-left:-30%;

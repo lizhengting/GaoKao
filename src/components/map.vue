@@ -7,7 +7,6 @@
 
 <script>
 import $ from 'jquery'
-import Type from '../../static/学校层次.json'
 import china from '../../static/china.json'
 import location from '../../static/本科学校经纬度.json'
 import yiBenLocation from '../../static/一本科学校经纬度.json'
@@ -20,11 +19,11 @@ export default {
       msg: 'Welcome to Your Vue.js App',
     }
   },
-  mounted(){
+mounted(){
+ 
     this.drawLine();
   },
   methods: {
-  
    drawLine(){
     // 基于准备好的dom，初始化echarts实例
     var mydata=location
@@ -37,7 +36,7 @@ export default {
 
       var option = {
         baseOption: {
-          backgroundColor: "white",//76becc
+          backgroundColor: "#76becc",
           // title: {
           //   text: "全国大学地图",
           //   x: "center",
@@ -47,7 +46,7 @@ export default {
           //       },
           // },
           tooltip: {
-            show:false
+            show: false
           },
           geo: {
             map: "china",
@@ -56,7 +55,7 @@ export default {
             itemStyle: {
               shadowBlur: 5,
               normal: {//地图背景色
-                        areaColor: '#7fbbe8',//#83a1fd
+                        areaColor: '#83a1fd',
                         //opacity: 0.5                    
                     },
               emphasis: {//鼠标放上去区域背景色
@@ -95,31 +94,8 @@ export default {
               },
               itemStyle: {
                normal: {
-                            
-                            //color: 'red', //散点颜色
-                            color:function(pointcolor){
-                              for(let i=0;i<Type.length;i++)
-                              {
-                                if(Type[i]['办学层次']=='专科')
-                                {
-                                  pointcolor='#eab026'
-                                }
-                                if(Type[i]['办学层次']=='本科')
-                                {
-                                  pointcolor='#e3852b'
-                                }
-                                if(Type[i]['办学层次']=='211')
-                                {
-                                  pointcolor='#d85d2a'
-                                }
-                                if(Type[i]['办学层次']=='985')
-                                {
-                                  pointcolor='#ce2626'
-                                }
-                              }
-                              return pointcolor;
-                            },
-                            fontSize: '1px'
+                            color: '#ffff00', //散点颜色
+                            fontSize: '5px'
                 }
               }
             }
@@ -169,7 +145,7 @@ export default {
 #Container{
   width: 100%;
   height: 100%;
-  //background: url('../assets/地图底图3.jpg') center !important;
+  background: url('../assets/地图底图3.jpg') center !important;
 }
 .border-box{
             position: relative;
